@@ -46,7 +46,8 @@
 }
 ```
 ### Decision Tree
-```python{
+```python
+{
     'criterion': 'gini',
     'max_depth': None,
     'min_samples_leaf': 1,
@@ -54,7 +55,8 @@
 }
 ```
 ### Neural Network
-```python{
+```python
+{
     'activation': 'relu',
     'alpha': 0.0001,
     'hidden_layer_sizes': (50, 25),
@@ -81,3 +83,4 @@ Performance Metrics
  Most discriminative feature: petal length (cm)
  Fastest training: Decision Tree (0.1519s)
  Most stable (CV): k-NN (0.9810)
+
