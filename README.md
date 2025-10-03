@@ -44,3 +44,40 @@
     'n_neighbors': 9,
     'weights': 'uniform'
 }
+```
+### Decision Tree
+```python{
+    'criterion': 'gini',
+    'max_depth': None,
+    'min_samples_leaf': 1,
+    'min_samples_split': 5
+}
+```
+### Neural Network
+```python{
+    'activation': 'relu',
+    'alpha': 0.0001,
+    'hidden_layer_sizes': (50, 25),
+    'learning_rate': 'constant',
+    'max_iter': 1000,
+    'n_iter': 21,
+    'loss': 0.7015698721526835
+}
+```
+### Statistical Significance Analysis
+ANOVA Test
+
+F-statistic: 2.9600
+p-value: 0.0902
+Conclusion: No significant difference between classifiers (p ≥ 0.05)
+
+Pairwise t-test Results (p-values)
+k-NNDecision TreeNeural Networkk-NN-0.07050.1079Decision Tree0.0705-0.3375Neural Network0.10790.3375-
+Note: * p < 0.05, ** p < 0.01
+Key Findings and Recommendations
+Performance Metrics
+
+ Best performing classifier: k-NN (Accuracy: 0.9556)
+ Most discriminative feature: petal length (cm)
+ Fastest training: Decision Tree (0.1519s)
+ Most stable (CV): k-NN (0.9810)
